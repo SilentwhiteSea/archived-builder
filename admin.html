@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<title>Admin Panel</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<script>
+
+let password=prompt("Admin Password")
+
+if(password!=="1234"){
+
+document.body.innerHTML="Access Denied"
+
+}
+
+</script>
+
+<div class="container">
+
+<h1>ADMIN PANEL</h1>
+
+<h2>Add Skill</h2>
+
+<input id="skillName" placeholder="Skill Name">
+<input id="skillIcon" placeholder="Icon URL">
+
+<button onclick="addSkill()">Add</button>
+
+<div id="skillList"></div>
+
+<hr>
+
+<h2>Add Skill Tree Node</h2>
+
+<input id="treeName" placeholder="Node Name">
+<input id="treePoint" placeholder="Point">
+
+<button onclick="addTree()">Add</button>
+
+<div id="treeList"></div>
+
+<hr>
+
+<h2>Add Trait</h2>
+
+<input id="traitName">
+<button onclick="addTrait()">Add</button>
+
+<hr>
+
+<h2>Add Weapon</h2>
+
+<input id="weaponName">
+<button onclick="addWeapon()">Add</button>
+
+<hr>
+
+<h2>Add Outfit</h2>
+
+<input id="outfitName">
+<button onclick="addOutfit()">Add</button>
+
+<hr>
+
+<h2>Add Singularity</h2>
+
+<input id="singularityName">
+<button onclick="addSingularity()">Add</button>
+
+<hr>
+
+<h2>Add E.G.O</h2>
+
+<input id="egoName">
+<button onclick="addEgo()">Add</button>
+
+</div>
+
+<script src="data.js"></script>
+<script src="admin.js"></script>
+
+</body>
+
+</html>

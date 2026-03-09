@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<title>Archived Builder</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>ARCHIVED BUILDER</h1>
+
+<h2>Skills (Max 5)</h2>
+
+<input id="skillSearch" placeholder="Search Skill">
+
+<div id="skillSuggestions"></div>
+
+<div id="skillsSlots"></div>
+
+<h2>Skill Tree (50 Points)</h2>
+
+Total Points : <span id="totalPoints">0</span> / 50
+
+<div id="treeContainer"></div>
+
+<button onclick="addTreeSlot()">+ Add Node</button>
+
+<h2>Traits (Max 3)</h2>
+
+<div id="traitSlots"></div>
+
+<h2>Weapons (Max 3)</h2>
+
+<div id="weaponSlots"></div>
+
+<h2>Outfit
+<select id="outfits"></select>
+</h2>
+
+<h2>Singularity
+<select id="singularity"></select>
+</h2>
+
+<h2>E.G.O
+<select id="ego"></select>
+</h2>
+
+<h2>Export Build</h2>
+
+<textarea id="buildCode"></textarea>
+
+<button onclick="exportBuild()">Export</button>
+
+<h2>Import Build</h2>
+
+<textarea id="importCode"></textarea>
+
+<button onclick="importBuild()">Import</button>
+
+<br><br>
+
+<button onclick="openAdmin()">Admin Panel</button>
+
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+
+</body>
+
+</html>
